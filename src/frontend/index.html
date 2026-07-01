@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predição de Câncer de Mama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Predição de Câncer de Mama</h1>
+        <p class="description">
+            Preencha os valores do exame para preparar os dados que serão enviados ao back-end.
+        </p>
+
+        <form id="prediction-form">
+            <label for="worst_concave_points">Pontos Côncavos (Máximo)</label>
+            <input
+                type="number"
+                id="worst_concave_points"
+                name="worst_concave_points"
+                step="any"
+                placeholder="Ex: 0.2654"
+            >
+
+            <label for="worst_perimeter">Perímetro (Máximo)</label>
+            <input
+                type="number"
+                id="worst_perimeter"
+                name="worst_perimeter"
+                step="any"
+                placeholder="Ex: 184.6"
+            >
+
+            <label for="mean_compactness">Compacidade (Média)</label>
+            <input
+                type="number"
+                id="mean_compactness"
+                name="mean_compactness"
+                step="any"
+                placeholder="Ex: 0.2776"
+            >
+
+            <label for="se_radius">Raio (Erro Padrão)</label>
+            <input
+                type="number"
+                id="se_radius"
+                name="se_radius"
+                step="any"
+                placeholder="Ex: 1.095"
+            >
+
+            <label for="worst_texture">Textura (Máximo)</label>
+            <input
+                type="number"
+                id="worst_texture"
+                name="worst_texture"
+                step="any"
+                placeholder="Ex: 17.33"
+            >
+
+            <label for="worst_smoothness">Suavidade (Máximo)</label>
+            <input
+                type="number"
+                id="worst_smoothness"
+                name="worst_smoothness"
+                step="any"
+                placeholder="Ex: 0.1622"
+            >
+
+            <label for="worst_symmetry">Simetria (Máximo)</label>
+            <input
+                type="number"
+                id="worst_symmetry"
+                name="worst_symmetry"
+                step="any"
+                placeholder="Ex: 0.4601"
+            >
+
+            <label for="se_concave_points">Pontos Côncavos (Erro Padrão)</label>
+            <input
+                type="number"
+                id="se_concave_points"
+                name="se_concave_points"
+                step="any"
+                placeholder="Ex: 0.01587"
+            >
+
+            <p id="error-message" class="error-message"></p>
+
+            <button type="submit">Prever</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
